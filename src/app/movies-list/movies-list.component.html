@@ -1,0 +1,98 @@
+<!-- <p>movies-list works!</p> -->
+ <div class="container-fluid">
+<h1>Movies</h1>
+<!-- <div class="row">
+    <div class="col-4">
+        Section 1
+    </div>
+
+    <div class="col-4">
+        Section 2
+    </div>
+    <div class="col-4">
+        Section 3
+    </div>
+        
+   
+    </div> -->
+
+
+
+
+<div class="row">
+    @for(movies of movies; track movies){
+
+    
+<div class="card col-3" style="width: 18rem;">
+    <img src="{{movies.imgUrl }}" >
+    <div class="card-body">
+      <h5 class="card-title">{{movies.Title}}</h5>
+      <p class="card-text">{{ movies.description}}</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+</div>
+ }
+<!-- 
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/nandhan-et00410955-1725626073.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Nandhan</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+    </div>
+
+    
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kozhipannai-chelladurai-et00411870-1726560826.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Chelladurai</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div>
+
+     
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/devara--part-1-et00310216-1712750637.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Devara</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div></div>
+    
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/tumbbad-et00079092-1726221741.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Tambbad</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div> 
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kishkindha-kaandam-et00410024-1726051976.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">kishkindha-kaandam</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div> 
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/vaazhai-et00408594-1724233930.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Vazhai</h5>
+      <p class="card-text">Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div> 
+
+  <div class="card col-3 movie-card" style="width: 18rem;">
+    <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/demonte-colony-2--vengeance-of-the-unholy-et00380018-1723644092.jpg" >
+    <div class="card-body">
+      <h5 class="card-title">Demonte-Colony</h5>
+      <p class="card-text">Horroer/Comedy/Drama</p>
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div> 
+</div> 
+</div>  -->
