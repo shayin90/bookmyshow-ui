@@ -11,5 +11,63 @@
 <body>
   <app-root></app-root>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <h2>Automatic Slideshow</h2>
+  <p>Change image every 2 seconds:</p>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" style="width:100%;height:450px">
+    <div class="text">Beach Image-1</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726144890944_u1coimbatorecreativesweb.jpg" style="width:100%;height:500px">
+    <div class="text">Lake Image-2</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1727179605930_alanwalker2024webshowcase1240x300chennai.jpg" style="width:100%;height:500px">
+    <div class="text">Flower Image-3</div>
+
+    
+  </div>
+  
+  </div>
+  <br>
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  //document.write("hi");//
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    
+    if (slideIndex > slides.length) 
+    {
+    slideIndex = 1
+    }    
+    
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    
+    
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
 </body>
 </html>
